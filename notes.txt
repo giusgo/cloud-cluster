@@ -1,6 +1,9 @@
 Hosts on Azure
 Hosts names configured in ssh config file
 
+The host names should be the ones in HOST column.
+The private IP addresses MUST match the IP address column (except the public one).
+
 HOST                IP address          Scope
 
 cluster-client      172.174.147.6       Public

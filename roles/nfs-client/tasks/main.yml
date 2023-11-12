@@ -1,4 +1,4 @@
-- name: Install nfs pakcages
+- name: Install nfs packages
   apt:
     update_cache: yes
     name:

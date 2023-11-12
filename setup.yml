@@ -4,11 +4,16 @@
     - vars.yml
 
   roles:
-
     - role: security
       become: yes
 
     - role: access
+
+    - role: mpi
+      become: yes
+
+
+
 
 - hosts: client
 
@@ -16,9 +21,11 @@
     - vars.yml
 
   roles:
-
     - role: nfs-client
       become: yes
+
+
+
 
 - hosts: servers
 
@@ -26,6 +33,5 @@
     - vars.yml
 
   roles:
-
     - role: nfs-servers
       become: yes

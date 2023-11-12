@@ -1,0 +1,5 @@
+# MPI CLUSTER
+
+cluster-client          slots=1     
+cluster-server-1        slots=1     
+cluster-server-2        slots=1     

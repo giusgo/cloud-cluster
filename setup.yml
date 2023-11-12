@@ -7,3 +7,5 @@
 
     - role: security
       become: yes
+
+    - role: access

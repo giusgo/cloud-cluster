@@ -9,3 +9,23 @@
       become: yes
 
     - role: access
+
+- hosts: client
+
+  vars_files:
+    - vars.yml
+
+  roles:
+
+    - role: nfs-client
+      become: yes
+
+- hosts: servers
+
+  vars_files:
+    - vars.yml
+
+  roles:
+
+    - role: nfs-servers
+      become: yes

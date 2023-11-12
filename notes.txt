@@ -1,6 +1,8 @@
 Hosts on Azure
 Hosts names configured in ssh config file
 
+The user in all hosts should be mpiuser
+
 The host names should be the ones in HOST column.
 The private IP addresses MUST match the IP address column (except the public one).
 

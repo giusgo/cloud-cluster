@@ -1,22 +1,22 @@
 - name: Copy cluster-client key
   ansible.builtin.copy:
     src: cluster-client.pem
-    dest: /home/{{ remote_user }}/.ssh
+    dest: /home/{{ user }}/.ssh
     mode: '400'
 
 - name: Copy cluster-server-1 key
   ansible.builtin.copy:
     src: cluster-server-1.pem
-    dest: /home/{{ remote_user }}/.ssh
+    dest: /home/{{ user }}/.ssh
     mode: '400'
 
 - name: Copy cluster-server-2 key
   ansible.builtin.copy:
     src: cluster-server-2.pem
-    dest: /home/{{ remote_user }}/.ssh
+    dest: /home/{{ user }}/.ssh
     mode: '400'
 
 - name: Copy ssh config file
   ansible.builtin.copy:
     src: config
-    dest: /home/{{ remote_user }}/.ssh
+    dest: /home/{{ user }}/.ssh

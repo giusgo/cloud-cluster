@@ -1,4 +1,4 @@
-- name: Install nfs pakcages
+- name: Install nfs packages
   apt:
     update_cache: yes
     name:
@@ -7,14 +7,14 @@
 
 - name: Ensure cloud folder is present
   ansible.builtin.file:
-    path: "/home/{{ remote_user }}/cloud"
-    owner: "{{ remote_user }}"
-    group: "{{ remote_user }}"
+    path: "/home/{{ user }}/cloud"
+    owner: "{{ user }}"
+    group: "{{ user }}"
     state: directory
 
 - name: Add mount point on fstab
   ansible.builtin.lineinfile:
     path: /etc/fstab
-    line: 10.0.0.4:/home/{{ remote_user }}/cloud    /home/{{ remote_user }}/cloud     nfs
+    line: 10.0.0.4:/home/{{ user }}/cloud    /home/{{ user }}/cloud     nfs
   notify:
     - Update mount points

@@ -7,14 +7,14 @@
 
 - name: Ensure cloud folder is present
   ansible.builtin.file:
-    path: "/home/{{ remote_user }}/cloud"
-    owner: "{{ remote_user }}"
-    group: "{{ remote_user }}"
+    path: "/home/{{ user }}/cloud"
+    owner: "{{ user }}"
+    group: "{{ user }}"
     state: directory
 
 - name: Export cloud folder to servers
   ansible.builtin.lineinfile:
     path: /etc/exports
-    line: /home/{{ remote_user }}/cloud     *(rw)
+    line: /home/{{ user }}/cloud     *(rw)
   notify:
     - Restart nfs-kernel-server

@@ -1,0 +1,9 @@
+Hosts on Azure
+Hosts names configured in ssh config file
+
+HOST                IP address          Scope
+
+cluster-client      172.174.147.6       Public
+                    10.0.0.4            Private
+cluster-server-1    10.0.0.5            Private
+cluster-server-2    10.0.0.6            Private

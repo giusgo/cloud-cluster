@@ -1,0 +1,9 @@
+- hosts: cluster
+
+  vars_files:
+    - vars.yml
+
+  roles:
+
+    - role: security
+      become: yes

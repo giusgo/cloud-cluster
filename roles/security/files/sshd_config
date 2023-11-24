@@ -8,8 +8,6 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
-# This file came from Ansible again
-
 Include /etc/ssh/sshd_config.d/*.conf
 
 Port 22

@@ -1,2 +1,7 @@
-# User on the target (remote) machine
+# User on remote machines
 user: mpiuser
+
+# Private IPs of the remote machines
+cluster-client-ip: 10.0.0.4
+cluster-server-0-ip: 10.0.0.5
+cluster-server-1-ip: 10.0.0.6

@@ -15,6 +15,6 @@
 - name: Add mount point on fstab
   ansible.builtin.lineinfile:
     path: /etc/fstab
-    line: 10.0.0.4:/home/{{ user }}/cloud    /home/{{ user }}/cloud     nfs
+    line: "{{ cluster-client-ip }}:/home/{{ user }}/cloud    /home/{{ user }}/cloud     nfs"
   notify:
     - Update mount points

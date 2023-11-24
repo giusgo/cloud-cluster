@@ -2,6 +2,4 @@
 .venv
 
 # SSH keys
-roles/access/files/cluster-client.pem
-roles/access/files/cluster-server-1.pem
-roles/access/files/cluster-server-2.pem
+roles/access/files/cluster.pem

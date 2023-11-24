@@ -1,0 +1,17 @@
+Host cluster-client
+    User mpiuser
+    HostName {{ cluster-client-ip }}
+    IdentityFile ~/.ssh/cluster.pem
+    SetEnv TERM=xterm-256color
+
+Host cluster-server-0
+    User mpiuser
+    HostName {{ cluster-server-0-ip }}
+    IdentityFile ~/.ssh/cluster.pem
+    SetEnv TERM=xterm-256color
+
+Host cluster-server-1
+    User mpiuser
+    HostName {{ cluster-server-1-ip }}
+    IdentityFile ~/.ssh/cluster.pem
+    SetEnv TERM=xterm-256color

@@ -35,3 +35,26 @@
   roles:
     - role: nfs-servers
       become: yes
+
+
+
+
+- hosts: cluster
+
+  vars_files:
+    - vars.yml
+
+  roles:
+    - role: python
+      become: yes
+
+
+
+
+- hosts: client
+
+  vars_files:
+    - vars.yml
+
+  roles:
+    - role: examples

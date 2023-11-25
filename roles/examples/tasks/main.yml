@@ -1,0 +1,14 @@
+- name: Copy image processing example
+  ansible.builtin.copy:
+    src: image_processing
+    dest: /home/{{ user }}/cloud/
+    owner: "{{ user }}"
+    group: "{{ user }}"
+
+- name: Copy matrix multiplication example
+  ansible.builtin.copy:
+    src: matrix_multiplication
+    dest: /home/{{ user }}/cloud/
+    owner: "{{ user }}"
+    group: "{{ user }}"
+

@@ -7,6 +7,8 @@
 
       # For image processing example
       - python3-pil
+      # For matrix multiplication example
+      - python3-numpy
 
 - name: Copy image processing example
   ansible.builtin.copy:

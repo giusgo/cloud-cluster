@@ -13,7 +13,11 @@ cluster-client      20.228.214.164      Public
 cluster-server-0    10.0.0.5            Private
 cluster-server-1    10.0.0.6            Private
 
-In Debian 12, for python MPI install:
+In Ubuntu 22.04 LTS, for python MPI install:
 
 - python3
 - python3-mpi4py
+
+For the example:
+
+- python3-pil

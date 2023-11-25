@@ -1,0 +1,20 @@
+- name: Install python and dependencies
+  apt:
+    update_cache: yes
+    name:
+      - python3
+      - python3-mpi4py
+
+      # For image processing example
+      - python3-pil
+
+- name: Copy image processing example
+  ansible.builtin.copy:
+    src: image_processing
+    dest: /home/{{ user }}/cloud/
+
+- name: Copy matrix multiplication example
+  ansible.builtin.copy:
+    src: matrix_multiplication
+    dest: /home/{{ user }}/cloud/
+
